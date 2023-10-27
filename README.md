@@ -18,4 +18,35 @@ Following an ELT approach, we first extract raw data without any modifications t
 
 ![Project architecture](docs/architeture.png)
 
-**DISCLAMER**: The Apache Beam is being used in direct runner mode. For a cloud environment, it may not be advantageous to use it unless you are working with the GCP (Google Cloud Platform) provider.
+**DISCLAMER**: The Apache Beam is being used in Direct Runner mode. For a cloud environment, it may not be advantageous to use it unless you are working with the GCP (Google Cloud Platform) provider.
+
+### How to run the project
+
+To start the project runs the following command in the terminal:
+
+```sh
+bash scripts/setup_docker_compose.sh start_airflow
+```
+
+If everything goes well, wait a few seconds and see the airflow in: http://localhost:8080/.
+
+To login:
+
+- **username**: airflow
+- **password**: airflow
+
+If everything goes smoothly, it will display the dag-anp on your screen:
+
+![Airflow UI](docs/airflow_ui.png)
+
+Inside the DAG, there are the following tasks:
+
+![Airflow Tasks](docs/airflow_ui.png)
+
+**Disclaimer**: To execute the tasks, the trigger has been configured to be manually initiated..
+
+To stop the project, just execute:
+```sh
+bash scripts/setup_docker_compose.sh stop_airflow
+```
+
