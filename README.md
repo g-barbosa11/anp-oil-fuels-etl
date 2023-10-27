@@ -97,8 +97,7 @@ Inside the DAG, there are the following tasks:
 
 **Disclaimer**: To execute the tasks, the trigger has been configured to be manually initiated..
 
-To stop the project, just execute:
+To stop the project, just runs on the terminal:
 ```sh
 bash scripts/setup_docker_compose.sh stop_airflow
 ```
-
