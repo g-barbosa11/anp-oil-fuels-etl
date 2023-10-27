@@ -14,7 +14,7 @@ The extracted data will be organized into a structured format with the following
 - **created_at**: Timestamp
 
 ### Repository sctructure
-'''sh
+```sh
 ├── dags
 │   ├── dag_anp.py
 │   ├── datalake
@@ -42,7 +42,8 @@ The extracted data will be organized into a structured format with the following
 └── scripts
     ├── project_config.sh
     └── setup_docker_compose.sh
-'''
+``````
+
 In the "dags" directory, you will find the following:
 
 - `dag_anp.py`: This file contains the code for the Directed Acyclic Graph (DAG) for your project.
