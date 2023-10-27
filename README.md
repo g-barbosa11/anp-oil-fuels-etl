@@ -41,7 +41,7 @@ If everything goes smoothly, it will display the dag-anp on your screen:
 
 Inside the DAG, there are the following tasks:
 
-![Airflow Tasks](docs/airflow_ui.png)
+![Airflow Tasks](docs/airflow_tasks.png)
 
 **Disclaimer**: To execute the tasks, the trigger has been configured to be manually initiated..
 
