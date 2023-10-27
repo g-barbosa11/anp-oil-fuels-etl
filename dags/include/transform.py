@@ -1,9 +1,9 @@
-import dask.dataframe as dd
-import pandas as pd
 import logging
 import re
 from datetime import datetime
 from typing import List
+
+import dask.dataframe as dd
 
 
 def read_csv_file(file_path: str) -> dd.DataFrame:
